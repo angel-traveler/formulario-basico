@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Placeholder Estilizado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .formulario {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Estilizando el placeholder */
+        input::placeholder, textarea::placeholder {
+            color: #888;
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        /* Para compatibilidad con navegadores antiguos */
+        input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+            color: #888;
+        }
+        input:-moz-placeholder, textarea:-moz-placeholder {
+            color: #888;
+        }
+        input::-moz-placeholder, textarea::-moz-placeholder {
+            color: #888;
+        }
+        input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+            color: #888;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="formulario">
+        <h2>Contacto</h2>
+        <input type="text" placeholder="Escribe tu nombre">
+        <input type="email" placeholder="Tu correo electrónico">
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
